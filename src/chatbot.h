@@ -36,6 +36,9 @@ public:
     // keywords: output array to store extracted keywords
     // return: number of keywords extracted
     int extractKeywords(const string& input, string keywords[], int maxKeywords = MAX_KEYWORDS);
+
+    // A function I have added 
+    bool checkSpaces(string& input);
 };
 
 // ---------------------------------Chatbot Response Processing Module----------------------------

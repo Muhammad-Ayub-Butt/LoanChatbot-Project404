@@ -26,7 +26,9 @@ string ChatbotInput::readUserInput() {
     // TODO: Implement reading input from console
 }
 
-bool ChatbotInput::validateInput(const string& input) {
+// 1. removed the const from the parameter as we have to change the original string but if we put const then it won't allow us to make the change when user inputs again.
+// 2. changed the return type to string from bool according to my logic as I will call this function within readUserInput .
+string ChatbotInput::validateInput(string& input) {
     // TODO: Implement input validation
 }
 
